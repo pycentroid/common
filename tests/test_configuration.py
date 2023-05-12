@@ -5,7 +5,8 @@ from os.path import join
 
 class TestStrategy(ConfigurationStrategy):
 
-    def __init__(self):
+    def __init__(self, configuration):
+        super().__init__(configuration)
         self.remote = 'https://example.com'
 
 

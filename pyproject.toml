@@ -4,6 +4,9 @@ version = "0.1.0"
 description = "@centroid framework for python common"
 authors = ["Kyriakos Barbounakis <k.barbounakis@gmail.com>"]
 readme = "README.md"
+packages = [
+  { include = "centroid" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
