@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pycentroid-common"
+version = "0.1.0"
+description = "@centroid framework for python common"
+authors = ["Kyriakos Barbounakis <k.barbounakis@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pydash = "^7.0.3"
+pyyaml = "^6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
