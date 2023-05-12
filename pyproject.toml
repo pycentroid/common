@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pycentroid-common"
-version = "0.1.0"
+version = "0.2.0"
 description = "@centroid framework for python common"
 authors = ["Kyriakos Barbounakis <k.barbounakis@gmail.com>"]
 readme = "README.md"
@@ -16,6 +16,7 @@ asyncio = "^3.4.3"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.3.1"
+pytest-asyncio = "^0.21.0"
 
 [pytest]
 asyncio_mode = "auto"
