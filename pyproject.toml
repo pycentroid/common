@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "pycentroid-common"
-version = "0.2.0"
+name = "pycentroid"
+version = "1.1.0"
 description = "@centroid framework for python common"
 authors = ["Kyriakos Barbounakis <k.barbounakis@gmail.com>"]
 readme = "README.md"
 packages = [
-  { include = "centroid" }
+  { include = "pycentroid" }
 ]
 
 [tool.poetry.dependencies]

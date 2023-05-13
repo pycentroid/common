@@ -1,9 +1,10 @@
-from centroid.common import ConfigurationBase, ConfigurationStrategy
+from pycentroid.common import ConfigurationBase, ConfigurationStrategy
 from os import getcwd
 from os.path import join
 
 
 class TestStrategy(ConfigurationStrategy):
+    __test__ = False
 
     def __init__(self, configuration):
         super().__init__(configuration)

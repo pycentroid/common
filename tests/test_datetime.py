@@ -1,4 +1,4 @@
-from centroid.common.datetime import isdatetime, getdatetime, getdate
+from pycentroid.common.datetime import isdatetime, getdatetime, getdate
 from datetime import datetime
 
 

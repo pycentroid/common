@@ -29,14 +29,6 @@ class ExpectedConfigurationStrategyError(Exception):
         super().__init__(self.message)
 
 
-class ConfigurationStrategy:
-    configuration = None
-
-    def __init__(self, configuration):
-        self.configuration = configuration
-        pass
-
-
 class ConfigurationBase:
     __strategy__ = {}
     __source__ = {}
@@ -92,3 +84,10 @@ class ConfigurationBase:
 
     def unset(self, path: str):
         return pydash.unset(self.__source__, replace_slash_with_dot(path))
+
+
+class ConfigurationStrategy:
+    configuration = None
+
+    def __init__(self, configuration: ConfigurationBase):
+        self.configuration = configuration
